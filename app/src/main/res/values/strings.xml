@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VentasMobileApp</string>
+    <string name="Bienvenidos">Bienvenidos a Ventas Mobile</string>
+    <string name="Ingreso">Ingresar o Registrarse</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_pedido">Ingrese el pedido</string>
+    <string name="SpinnerProducto">Ingrese el producto</string>
+    <string name="SpinnerCantidad">Ingrese la cantidad</string>
+    <string name="SpinnerCliente">Ingrese el cliente</string>
+    <string name="botonPedido">Ingresar Pedido</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingreso">
+
+    <TextView
+        android:id="@+id/Pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="83dp"
+        android:text="@string/prompt_pedido"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="68dp" />
+
+    <Spinner
+        android:id="@+id/spinnerProducto"
+        android:layout_width="395dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/ingresarCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresarProducto" />
+
+    <TextView
+        android:id="@+id/ingresarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/SpinnerProducto"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingresarCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/SpinnerCantidad"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProducto" />
+
+    <Spinner
+        android:id="@+id/spinnerCantidad"
+        android:layout_width="395dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/IngreseCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresarCantidad" />
+
+    <TextView
+        android:id="@+id/IngreseCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/SpinnerCliente"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCantidad" />
+
+    <Spinner
+        android:id="@+id/spinnerCliente"
+        android:layout_width="395dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IngreseCliente" />
+
+    <Button
+        android:id="@+id/IngresarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="240dp"
+        android:text="@string/botonPedido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCliente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
